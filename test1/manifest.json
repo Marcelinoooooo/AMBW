@@ -1,0 +1,36 @@
+{
+  "name": "Fitness template  Application",
+  "short_name": "Fitness template apps",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "dir": "ltr",
+  "lang": "en-US",
+  "icons": [
+    {
+      "src": "/src/img/icon/icon-72x72.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "/src/img/icon/icon-96x96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "/src/img/icon/icon-144x144.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+
+    {
+      "src": "/src/img/icon/icon-192x192.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "/src/img/icon/icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

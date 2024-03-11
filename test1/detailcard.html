@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <meta charset="UTF-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="detail_style.css" />
+  </head>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" style="height: 100px; font-size: 20px">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" style="font-weight: bold">Dribble</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/ceklagi.html">Inspiration</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Find a designer </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/action.html">Designer search</a></li>
+              <li><a class="dropdown-item" href="/testpage2.html">Post Job</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search" style="height: 40px">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <body>
+    <h2 id="title"></h2>
+    <div class="container">
+      <img id="titleimg" src="src/img/logodetail/logo1.png" alt="" />
+      <div id="tx">
+        Purweb UI/UX design
+        <p id="subtitle" style="color: greenyellow">Avaible for work</p>
+      </div>
+    </div>
+    <img id="isi" alt="" />
+    <div class="container" style="width: 1000px; margin-top: 10px">
+      <p id="isiDetail"></p>
+    </div>
+    <div class="container" style="justify-content: center">
+      <a href="halaman_baru.html" class="btn btn-primary btn-lg">Back to main page</a>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Mengambil data dari localStorage
+        const orderData = JSON.parse(localStorage.getItem("orderData"));
+
+        // Memastikan data ada sebelum menampilkan judul
+        if (orderData && orderData.title) {
+          // Mengambil judul dari data dan menampilkannya di elemen dengan id "pageTitle"
+          document.getElementById("title").textContent = orderData.title;
+          document.getElementById("isi").src = orderData.image;
+          document.getElementById("isiDetail").textContent = orderData.teksImg;
+        } else {
+          console.error("No order data found or no title available.");
+        }
+      });
+    </script>
+  </body>
+</html>

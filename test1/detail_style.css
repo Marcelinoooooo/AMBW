@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#title {
+  margin-left: 80px;
+  margin-top: 30px;
+}
+
+#titleimg {
+  width: 75px;
+  margin-left: 0;
+  border-radius: 30px;
+  margin-right: 30px;
+}
+
+#tx {
+  size: 30px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+#isi {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  border-radius: 30px;
+  width: 1000px;
+  height: 50%;
+}
+
+.isi_teks {
+  text-align: center;
+}

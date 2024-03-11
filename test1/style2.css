@@ -1,0 +1,57 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Atur margin antar baris kartu */
+}
+
+.box {
+  width: 300px; /* Atur lebar kartu */
+  height: 400px; /* Atur tinggi kartu */
+  margin: 0 10px; /* Atur margin antar kartu */
+  border: 1px solid #ccc; /* Atur border sesuai kebutuhan */
+  border-radius: 5px; /* Atur border-radius sesuai kebutuhan */
+}
+
+.image {
+  width: 100%; /* Mengisi lebar gambar ke dalam div parent */
+  height: 60%; /* Mengatur tinggi gambar sesuai kebutuhan */
+  overflow: hidden; /* Mengatur agar gambar yang melebihi ukuran di dalam kotak tersembunyi */
+}
+
+.image img {
+  width: 100%; /* Mengisi lebar gambar ke dalam div parent */
+  height: auto; /* Mengatur tinggi gambar agar tetap proporsional */
+}
+
+.content {
+  height: 40%; /* Mengatur tinggi konten sesuai kebutuhan */
+  padding: 10px; /* Atur padding sesuai kebutuhan */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.price {
+  font-weight: bold; /* Atur gaya teks sesuai kebutuhan */
+  text-align: center; /* Atur perataan teks sesuai kebutuhan */
+}
+
+#button {
+  display: block;
+  background-color: #007bff; /* Atur warna latar belakang sesuai kebutuhan */
+  color: #fff; /* Atur warna teks sesuai kebutuhan */
+  text-align: center; /* Atur perataan teks sesuai kebutuhan */
+  padding: 5px 10px; /* Atur padding sesuai kebutuhan */
+  text-decoration: none; /* Atur dekorasi teks sesuai kebutuhan */
+  border-radius: 5px; /* Atur border-radius sesuai kebutuhan */
+}
+
+#button:hover {
+  background-color: #0056b3; /* Atur warna latar belakang hover sesuai kebutuhan */
+}
